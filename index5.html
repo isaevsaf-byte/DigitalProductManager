@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Safar Isaev — Digital Product Manager | Procurement Orchestration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Safar Isaev — Digital Product Manager. Orchestrating procurement with AI agents, intelligent intake and self-funding systems." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Safar Isaev — Digital Product Manager" />
+  <meta property="og:description" content="Orchestrating procurement with AI agents, intelligent intake and self-funding systems." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root{
+      --bg:#0b1a2b;           /* deep navy */
+      --panel:#0f2239;        /* slightly lighter navy */
+      --ink:#e8f1ff;          /* text */
+      --muted:#a8bdd8;        /* secondary text */
+      --cyan:#35d0ff;         /* BAT-ish neon cyan */
+      --amber:#ffb547;        /* highlight */
+      --lime:#9cf585;         /* success */
+      --danger:#ff6b6b;       /* alert */
+      --radius:14px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:radial-gradient(1200px 800px at 80% -10%, #163055 0%, var(--bg) 55%) fixed; color:var(--ink); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;}
+    a{color:var(--cyan);text-decoration:none}
+    a:hover{opacity:.9}
+    .wrap{max-width:1080px;margin:auto;padding:28px}
+    header{display:flex;gap:18px;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:42px;height:42px;border-radius:50%;background:
+      radial-gradient(12px 12px at 70% 30%, #fff, #9cf),
+      radial-gradient(60px 60px at 50% 50%, #1b3a63, #0b1a2b);
+      box-shadow:0 0 0 2px #1f3c63, 0 8px 22px rgba(0,0,0,.4);
+    }
+    nav{display:flex;gap:18px;flex-wrap:wrap}
+    nav a{padding:8px 12px;border-radius:10px;background:transparent;border:1px solid #274667}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;margin-top:10px}
+    @media (max-width:900px){ .hero{grid-template-columns:1fr} header{flex-wrap:wrap}}
+    h1{font-size:clamp(26px, 4.6vw, 44px);line-height:1.1;margin:0 0 8px}
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:#102b46;border:1px solid #224a72;color:var(--muted);font-size:.9rem}
+    .badge{color:#001a24;background:linear-gradient(90deg, var(--cyan), #7ce7ff); padding:6px 12px;border-radius:999px;font-weight:600}
+    .hero .panel{background:linear-gradient(180deg,#0f2239, #0c1e33);border:1px solid #1f3c63;padding:20px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .btn{padding:12px 16px;border-radius:12px;border:1px solid #2a4a70;background:#102741;color:var(--ink)}
+    .btn.primary{background:linear-gradient(90deg,#1aa7e4,var(--cyan)); color:#062233; font-weight:700;border:none}
+    .btn.ghost{background:transparent}
+    .grid{display:grid;gap:18px}
+    .cols-3{grid-template-columns:repeat(3,1fr)}
+    .cols-2{grid-template-columns:repeat(2,1fr)}
+    @media (max-width:900px){ .cols-3, .cols-2{grid-template-columns:1fr}}
+    section{margin:40px 0}
+    h2{font-size:clamp(20px, 3.2vw, 28px);margin:0 0 14px}
+    .panel{background:linear-gradient(180deg,#0f2239, #0c1e33);border:1px solid #1f3c63;padding:20px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .kpi{padding:16px;border-radius:12px;background:#0f2540;border:1px solid #21456b}
+    .kpi b{display:block;font-size:24px}
+    .muted{color:var(--muted)}
+    /* mini-tabs */
+    .tabs{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+    .tab{padding:8px 12px;border-radius:10px;border:1px solid #2a4a70;background:#112a47;cursor:pointer}
+    .tab.active{background:linear-gradient(90deg,#1aa7e4,var(--cyan)); color:#052136;border:none}
+    .hide{display:none}
+    /* cards */
+    .card{display:flex;flex-direction:column;gap:10px;padding:18px;border-radius:14px;background:#102741;border:1px solid #21456b}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:4px 10px;border:1px solid #2a4a70;border-radius:999px;background:#0f2a47;color:var(--muted);font-size:.85rem}
+    footer{margin:40px 0 10px;color:var(--muted);font-size:.9rem}
+    /* subtle separator */
+    .sep{height:1px;background:linear-gradient(90deg,transparent,#1e3b60,transparent);margin:22px 0}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div class="badge">Digital Product Manager — Procurement</div>
+          <div class="muted">Safar Isaev · Southampton, UK</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#impact">Impact</a>
+        <a href="#work">Work</a>
+        <a href="#dashboard">Mini-Dashboard</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Orchestrating intelligent procurement systems that <span style="color:var(--cyan)">earn</span>.</h1>
+        <div class="tag">From processes → to orchestration · DPW 2025</div>
+        <p class="muted" style="max-width:58ch;margin-top:10px">
+          I design AI-ready workflows—intelligent intake, agentic automation, and finance-linked decisioning—so procurement moves from managing spend to managing <em>intelligence</em>.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="CV_Safar_Isaev.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="btn" href="Cover_Letter_Safar_Isaev.pdf" target="_blank" rel="noopener">Cover Letter</a>
+          <a class="btn ghost" href="DPW_Report.pdf" target="_blank" rel="noopener">DPW 2025 Report</a>
+        </div>
+      </div>
+      <div class="panel">
+        <h3 style="margin:0 0 8px">What I Do</h3>
+        <div class="grid cols-2">
+          <div class="card">
+            <span class="pill">Orchestrate</span>
+            <div class="muted">Connect Finance (BPC), Contracts & S2C into one adaptive flow (Demand 360).</div>
+          </div>
+          <div class="card">
+            <span class="pill">Automate</span>
+            <div class="muted">Agentic intake, waiver routing in Coupa, self-service & guided buying.</div>
+          </div>
+          <div class="card">
+            <span class="pill">Enable</span>
+            <div class="muted">CoPilot Pro rollout & training—first DRBU with full access and daily usage.</div>
+          </div>
+          <div class="card">
+            <span class="pill">Measure</span>
+            <div class="muted">Cycle-time, adoption, and value per automation hour—tracked in one portal.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact">
+      <h2>Impact Metrics</h2>
+      <div class="kpis">
+        <div class="kpi"><b>100%</b><span class="muted">CoPilot Pro adoption in team</span></div>
+        <div class="kpi"><b>↓&nbsp;waiver cycle</b><span class="muted">Hours not days (Coupa automation)</span></div>
+        <div class="kpi"><b>Demand&nbsp;360</b><span class="muted">Finance→Contracts→Sourcing workload</span></div>
+        <div class="kpi"><b>WE Portal</b><span class="muted">Dashboards for spend, projects, velocity</span></div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2>Featured Work</h2>
+      <div class="grid cols-3">
+        <article class="panel">
+          <div class="pill">Concept → Pilot</div>
+          <h3 style="margin:8px 0">Demand 360</h3>
+          <p class="muted">Linked BPC plans with contracts to predict tender waves and balance team workload. Maps directly to Oro-style orchestration.</p>
+        </article>
+        <article class="panel">
+          <div class="pill">Automation</div>
+          <h3 style="margin:8px 0">Coupa Waiver Digitalisation</h3>
+          <p class="muted">CI idea → global rollout team. Auto-routed approvals, full audit trail, rapid cycle times.</p>
+        </article>
+        <article class="panel">
+          <div class="pill">Enablement</div>
+          <h3 style="margin:8px 0">CoPilot Pro for DRBU</h3>
+          <p class="muted">Secured licenses and trained the team on prompting and daily use; embedded AI in BAU.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="dashboard">
+      <h2>Mini-Dashboard (live sample)</h2>
+      <p class="muted" style="margin-top:-6px">Tiny, dependency-free charts. Replace the numbers easily in the SVGs below.</p>
+
+      <div class="panel">
+        <div class="tabs">
+          <button class="tab active" data-tab="adoption">Adoption</button>
+          <button class="tab" data-tab="velocity">Process Velocity</button>
+          <button class="tab" data-tab="value">Value / Automation Hour</button>
+        </div>
+
+        <!-- Adoption -->
+        <div id="adoption" class="tabpane">
+          <div class="grid cols-3">
+            <div class="card">
+              <b>CoPilot Usage</b>
+              <svg viewBox="0 0 220 110" width="100%" height="90">
+                <!-- axis -->
+                <rect x="0" y="0" width="220" height="110" fill="transparent"/>
+                <line x1="20" y1="95" x2="210" y2="95" stroke="#264b70" />
+                <!-- bars -->
+                <g fill="url(#gradCyan)">
+                  <rect x="35" y="55" width="30" height="40" rx="4"/>
+                  <rect x="95" y="35" width="30" height="60" rx="4"/>
+                  <rect x="155" y="15" width="30" height="80" rx="4"/>
+                </g>
+                <text x="35" y="105" font-size="11" fill="#a8bdd8">Q1</text>
+                <text x="95" y="105" font-size="11" fill="#a8bdd8">Q2</text>
+                <text x="155" y="105" font-size="11" fill="#a8bdd8">Q3</text>
+                <defs>
+                  <linearGradient id="gradCyan" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0%" stop-color="#30c7ff"/>
+                    <stop offset="100%" stop-color="#138bba"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span class="muted">Users active weekly (↑)</span>
+            </div>
+
+            <div class="card">
+              <b>Portal Adoption</b>
+              <svg viewBox="0 0 220 110" width="100%" height="90">
+                <polyline points="20,90 60,70 100,65 140,50 180,35 210,28"
+                          fill="none" stroke="#9cf585" stroke-width="3"/>
+                <circle cx="210" cy="28" r="4" fill="#9cf585"/>
+              </svg>
+              <span class="muted">Monthly active users</span>
+            </div>
+
+            <div class="card">
+              <b>Guided Buying</b>
+              <svg viewBox="0 0 220 110" width="100%" height="90">
+                <rect x="25" y="60" width="160" height="22" rx="11" fill="#17395d"/>
+                <rect id="gb" x="25" y="60" width="120" height="22" rx="11"
+                      fill="url(#gradAmber)"></rect>
+                <defs>
+                  <linearGradient id="gradAmber" x1="0" x2="1">
+                    <stop offset="0%" stop-color="#ffb547"/>
+                    <stop offset="100%" stop-color="#ffd18b"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span class="muted">% of eligible requests via guided flow</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Velocity -->
+        <div id="velocity" class="tabpane hide">
+          <div class="grid cols-2">
+            <div class="card">
+              <b>Waiver Cycle Time</b>
+              <svg viewBox="0 0 260 110" width="100%" height="90">
+                <text x="20" y="30" fill="#a8bdd8" font-size="12">Before</text>
+                <text x="20" y="80" fill="#a8bdd8" font-size="12">After</text>
+                <rect x="80" y="15" width="150" height="22" rx="11" fill="#264b70"/>
+                <rect x="80" y="65" width="60" height="22" rx="11" fill="#9cf585"/>
+              </svg>
+              <span class="muted">Hours vs. days after automation</span>
+            </div>
+            <div class="card">
+              <b>PR→PO Lead Time</b>
+              <svg viewBox="0 0 260 110" width="100%" height="90">
+                <polyline points="20,80 70,65 120,60 170,48 220,40"
+                  fill="none" stroke="#30c7ff" stroke-width="3"/>
+                <circle cx="220" cy="40" r="4" fill="#30c7ff"/>
+              </svg>
+              <span class="muted">Faster approvals via intake orchestration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Value -->
+        <div id="value" class="tabpane hide">
+          <div class="grid cols-2">
+            <div class="card">
+              <b>Value / Automation Hour</b>
+              <svg viewBox="0 0 260 110" width="100%" height="90">
+                <rect x="30" y="20" width="40" height="70" rx="6" fill="#17395d"/>
+                <rect x="90" y="35" width="40" height="55" rx="6" fill="#17395d"/>
+                <rect x="150" y="10" width="40" height="85" rx="6" fill="#9cf585"/>
+                <rect x="210" y="5"  width="40" height="90" rx="6" fill="#9cf585"/>
+              </svg>
+              <span class="muted">Trend improving with agents + intake</span>
+            </div>
+            <div class="card">
+              <b>Compliance vs. Touchless Rate</b>
+              <svg viewBox="0 0 260 110" width="100%" height="90">
+                <line x1="30" y1="90" x2="230" y2="90" stroke="#264b70"/>
+                <rect x="40" y="40" width="60" height="50" fill="#30c7ff"/>
+                <rect x="130" y="30" width="60" height="60" fill="#9cf585"/>
+                <text x="45" y="35" fill="#a8bdd8" font-size="12">Compliance</text>
+                <text x="135" y="25" fill="#a8bdd8" font-size="12">Touchless</text>
+              </svg>
+              <span class="muted">Both climbing as orchestration matures</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="panel">
+        <p class="muted">Open to discuss orchestration, intelligent intake, and agentic AI in procurement.</p>
+        <p>
+          <a class="btn primary" href="mailto:safar_isaev@bat.com">safar_isaev@bat.com</a>
+          <a class="btn" href="https://linkedin.com/in/safarisaev" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn ghost" href="DPW_Report.pdf" target="_blank" rel="noopener">DPW 2025 Report</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="yr"></span> Safar Isaev · Built with plain HTML/CSS/JS · Deployed on GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    // tabs
+    const tabs = document.querySelectorAll('.tab');
+    const panes = document.querySelectorAll('.tabpane');
+    tabs.forEach(t=>{
+      t.addEventListener('click', ()=>{
+        tabs.forEach(x=>x.classList.remove('active'));
+        panes.forEach(p=>p.classList.add('hide'));
+        t.classList.add('active');
+        document.getElementById(t.dataset.tab).classList.remove('hide');
+      });
+    });
+    // year
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
